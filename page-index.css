@@ -1,0 +1,249 @@
+/* 编辑主页样式表 */
+body{
+	background: url(../img/bd-dg.png) repeat-x;
+}
+/* 固定元素宽度或居中 */
+.clearfix:before,.clearfix:after{
+	content: "";
+	display:table;
+	clear: both;
+}
+.clearfix{
+	zoom: 1;
+}
+.w{
+	width: 940px;
+	margin: 0 auto;
+}
+.header{
+	padding: 37px 0 46px;
+/* 	background-color: #bfa; */
+} 
+.logo{
+	margin-left: 15px;
+}
+.nav{
+	float: right;
+	margin-top:22px;
+}
+.nav li{
+	float: left;
+	padding: 0 10px 8px;
+	border-left: #d6d6d6 1px dotted;
+}
+.nav a{
+	font: 14px bold Georgia ;
+	color: #666;
+	text-decoration: none;
+}
+.nav a:hover{
+	color: #938e8e;
+	text-decoration: underline;
+}
+.nav p,.footer p{
+	font: 11px Tahoma;
+	color: #b7b7b7;
+}
+.banner{
+	background: url(../img/bannerbg.png) no-repeat bottom center;
+	height: 356px;
+	position: relative;
+	/* background-color: #bfa; */
+	
+}
+.pointerDiv{
+	position: absolute;/* 子绝父相 */
+	/* top: 314px;
+	left: 15px; */
+	left: 50%;
+	margin-left: -480px;
+	/* display: block; */
+}
+.pointerDiv a{
+	display: inline-block;
+	/* float: left; */
+	width: 17px;
+	height: 17px;
+	background: url(../img/pointer.png) no-repeat;
+	margin-left: 4px;
+	
+}
+.pointerDiv.active{
+	background: url(../img/pointer-active.png) no-repeat;
+}
+.pointerDiv.active,
+.pointerDiv a:hover/* 切换图片的时候第二个效果才会消失，并不矛盾 */
+{
+	background: url(../img/pointer-active.png) no-repeat;
+}
+
+/* 设置content */
+.content h1{
+	text-align: center;
+	font: bold 24px Georgia;
+	margin-top: 6px;
+	background: url(../img/line.png) bottom center no-repeat;
+	padding: 0 0 20px 0px;
+	margin-bottom: 38px;
+}
+.content .pl , .content .cs , .content .uc,
+.contact .sc , .contact .co , .contact .nu
+{
+	float: left;
+	width: 300px;
+}
+.content .cs,.contact .co{
+	margin: 0 20px;
+}
+.content h2{
+	font: 20px bold Georgia;
+	color: #11719e;
+}
+.content p{
+	font: 12px Myriad Pro ;
+	color: #cecece;
+}
+.content .imdDiv{
+	width: 299px;
+	height: 192px;
+	background: url(../img/imgbg.png);
+	margin: 16px 0px 10px 0px ;
+	text-align: center;
+	padding-top: 10px;
+}
+.content .p2{
+	height: 92px;
+	color: #3e3e3e;
+	font: 12px Myriad Pro;
+	word-spacing: 2px;
+	padding-left: 8px;
+}
+.content .lm{
+	background: url(../img/btn/btn1.png);
+	width: 163px;
+	height: 40px;
+	display: block;
+	font: 12px Myriad Pro #428fb2 ;
+	text-decoration: none;
+	text-indent: 1em;
+	line-height:40px ;
+	margin-bottom: 35px;
+}
+.contact{
+	background: url(../img/line.png) no-repeat top center;
+}
+/* .contact .sc , .contact .co , .contact .nu{
+	 background-color: #B7B7B7; 
+	height: 500px;
+} 辅助设置,没用了 */
+.contact .txt{
+	background: url(../img/contact/input.png) no-repeat;
+	_background-attachment: fixed;/* 单独为IE6设置一个背景不随元素滚动 */
+	width: 276px;
+	height: 33px;
+	line-height: 33px;
+	border:none;
+	padding: 0px 10px;
+	margin: 0 0 16px 0;
+	
+}
+.contact .tarea{
+	background: url(../img/contact/tarea.png) no-repeat;
+	width: 276px;
+	height: 114px;
+	border:none;
+	overflow:auto;
+	resize: none;/* 设置文本域不能调整大小,buneng */
+	/* padding: 0px; */
+	margin: 0px;
+	padding: 10px;
+	_background-attachment: fixed;/* 单独为IE6设置一个背景不随元素滚动 */
+	
+}
+.contact .btn{
+	background:url(../img/contact/bt.png) no-repeat;
+	width: 163px;
+	height: 32px;
+	border: none;
+	margin: 11px 0 23px ;
+	color: #f5f8f9;
+	font: 13px Georgia ;
+	text-align: left;
+	text-indent: 1em;
+	/* 用cursor设置鼠标指针的样式 */
+	cursor: pointer;
+}
+.contact h2{
+	color: #444;
+	font: 18px Georgia;
+	border-bottom: 1px dashed #d3d3d3;
+	padding: 44px 0 10px 0;
+	margin-bottom: 15px;
+}
+.sc .p1{
+	color: #444444;
+	font: 12px/1 Myriad Pro;
+}
+.icon{
+	font-size: 0;/* 减小空格，还可以浮动 */
+}
+.sc .icon{
+	margin-right: 4px;
+	margin-top: 2px;
+}
+.sc .nl{
+	font: bold 18px Gill Sans MT ;
+	padding: 38px 0 10px;
+	margin-bottom: 0px;
+	margin-top: 10px;
+}
+.sc .txt{
+	margin-bottom:0 ;
+	margin-top: 10px;
+}
+.nu p{
+	color: #444444;
+	font: 12px/1 Myriad Pro;
+	height: 58px;
+	_height: 58px;/* 单独为IE6设置 */
+	border-bottom: 1px dashed #d3d3d3;
+	margin-bottom: 14px;
+	padding-bottom: 9px;/* 边界线上是内边距,下是外边距 */
+}
+.nu img{
+	float: left;
+	margin-right: 8px;
+}
+/* {
+	
+}.nu .btn */
+.nu .nomargin{
+	margin-bottom: 0px;
+}
+.footer{
+	height: 173px;
+	background-color: #444444;
+	border-top: 10px solid #4c4c4c;
+}
+.footer a{
+	font: 11px Myriad Pro ;
+	color: #999;
+	text-decoration: none;
+}
+.footer a:hover{
+	color: #CECECE;
+}
+.footer.w{
+	margin: 18px 23px 0 8px;
+	/* background-color: ; */
+	
+}
+.footer .copy{
+	/* float: right; */
+	display: inline;/* 解决IE6双倍边距问题 */
+}
+.footer p{
+	margin-left: 8px;
+	margin-right: 23px;
+	margin-bottom: 6px;
+}
